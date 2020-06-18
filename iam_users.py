@@ -19,7 +19,7 @@ def accounts():
             list_users.append(account_dict)
             #print(account_dict)
     return csv_creator(list_users)
-    #print(list_users)
+    print(list_users)
 
 def ami():
     list_ami=[]
