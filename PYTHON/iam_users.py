@@ -34,6 +34,6 @@ def ami():
     print(list_ami)
     return csv_creator(list_ami)
 
-accounts()
-#ami()
+#accounts()
+ami()
 #csv_file(x)
