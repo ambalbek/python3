@@ -5,7 +5,7 @@ num = int(input("Enter a number: "))
 sum = 0
 
 # find the sum of the cube of each digit
-#comment1
+#comment
 
 temp = num
 while temp > 0:
