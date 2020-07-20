@@ -1,3 +1,4 @@
+#!/bin/bash
 import datetime
 from dateutil.parser import parse
 from pprint import pprint
