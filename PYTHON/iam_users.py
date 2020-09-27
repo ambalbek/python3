@@ -18,8 +18,8 @@ def accounts():
             account_dict['Days']=time_diff(creation_date)
             list_users.append(account_dict)
             #print(account_dict)
-    return csv_creator(list_users)
-    print(list_users)
+    #return csv_creator(list_users)
+    return (list_users)
 
 def ami():
     list_ami=[]
@@ -34,6 +34,7 @@ def ami():
     print(list_ami)
     return csv_creator(list_ami)
 
-#accounts()
-ami()
+accounts()
+print(accounts())
+#ami()
 #csv_file(x)

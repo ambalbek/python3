@@ -13,7 +13,7 @@ def days_old(date):
 
 def lambda_handler(event, context):
 
-    x=[[v for ami.items() if if k=='Name' and v!=v.startswith('DFS')]for ami in amis = ec2.describe_images(Owners=['self'])['Images']]
+    x=[[v for ami.items() if k=='Name' and v!=v.startswith('DFS')]for ami in amis = ec2.describe_images(Owners=['self'])['Images']]
 
     for ami in amis:
         #print(ami)
