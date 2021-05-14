@@ -19,7 +19,7 @@ def translate(w):
             return 'I didnt understand your request. BYE'
     else:
         return 'please double check it.'
-word = input('Enter word: ')
+word = input('Enter your word: ')
 output = (translate(word))
 if type(output)==list:
     for i in output:
