@@ -1,19 +1,13 @@
 import os.path,sys
 import pandas as pd
-import numpy as np
 
 def logs_from_file(logs):
-    fileName = os.path.join(workingDirectory,'./test.txt')
-    with open(fileName,'r') as test_file: 
-        for line in test_file.readlines():
-            if '*030240928' in line:
-                logs['Availity'].append(line)
-            if '*030240122' in line:
-                logs['RealMed'].append(line)
-            if '*030550127' in line:
-                logs['Hews'].append(line)
-        test_file.close()
-
+    fileName = os.path.join(directory,'../logs.txt')
+    test_file = open(fileName,'r')
+    logs['Availity']=[i for i in test_file.readlines() if '*030240928' in i]
+    logs['Availity']=[i for i in test_file.readlines() if '*030240122' in i]
+    logs['Availity']=[i for i in test_file.readlines() if '*030550127' in i]
+    test_file.close()
 
 def init_logs():
     logs = {}
@@ -131,33 +125,7 @@ def converter():
     
     print(df)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 if "__main__" == __name__:
-    workingDirectory  = os.path.realpath(sys.argv[0])
+    directory = os.path.realpath(sys.argv[0])
     converter()
     
