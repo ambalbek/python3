@@ -1,13 +1,18 @@
-import os.path,sys
+import os.path,sys,time
 import pandas as pd
 
 def logs_from_file(logs):
     fileName = os.path.join(directory,'../logs.txt')
-    test_file = open(fileName,'r')
-    logs['Availity']=[i for i in test_file.readlines() if '*030240928' in i]
-    logs['Availity']=[i for i in test_file.readlines() if '*030240122' in i]
-    logs['Availity']=[i for i in test_file.readlines() if '*030550127' in i]
+    test_file = open(fileName,'r')  
+    for line in test_file.readlines():
+        if '*030240928' in line:
+            logs['Availity'].append(line)
+        if '*030240122' in line:
+            logs['RealMed'].append(line)
+        if '*030550127' in line:
+            logs['Hews'].append(line)
     test_file.close()
+
 
 def init_logs():
     logs = {}
@@ -89,26 +94,26 @@ def converter():
     he_ok_270 = [i for i in  he_type_270  if "*340*" in i]
     he_tx_270 = [i for i in  he_type_270  if "*400*" in i]
     #####################################
-    av_type_271 = [i for i in hews if '*191703*' in i]
-    he_il_271 = [i for i in av_type_271 if "*621*" in i]
-    he_mt_271 = [i for i in av_type_271 if "*751*" in i]
-    he_nm_271 = [i for i in av_type_271 if "*290*" in i]
-    he_ok_271 = [i for i in av_type_271 if "*340*" in i]
-    he_tx_271 = [i for i in av_type_271 if "*400*" in i]
+    he_type_271 = [i for i in hews if '*191703*' in i]
+    he_il_271 = [i for i in he_type_271 if "*621*" in i]
+    he_mt_271 = [i for i in he_type_271 if "*751*" in i]
+    he_nm_271 = [i for i in he_type_271 if "*290*" in i]
+    he_ok_271 = [i for i in he_type_271 if "*340*" in i]
+    he_tx_271 = [i for i in he_type_271 if "*400*" in i]
     ######################################
-    av_type_276 = [i for i in hews if '*085707*' in i]
-    he_il_276 = [i for i in av_type_276 if "*621*" in i]
-    he_mt_276 = [i for i in av_type_276 if "*751*" in i]
-    he_nm_276 = [i for i in av_type_276 if "*290*" in i]
-    he_ok_276 = [i for i in av_type_276 if "*340*" in i]
-    he_tx_276 = [i for i in av_type_276 if "*400*" in i]
+    he_type_276 = [i for i in hews if '*085707*' in i]
+    he_il_276 = [i for i in he_type_276 if "*621*" in i]
+    he_mt_276 = [i for i in he_type_276 if "*751*" in i]
+    he_nm_276 = [i for i in he_type_276 if "*290*" in i]
+    he_ok_276 = [i for i in he_type_276 if "*340*" in i]
+    he_tx_276 = [i for i in he_type_276 if "*400*" in i]
     #####################################
-    av_type_277  = [i for i in hews if '*0877077*' in i]
-    he_il_277 = [i for i in av_type_277  if "*621*" in i]
-    he_mt_277 = [i for i in av_type_277  if "*751*" in i]
-    he_nm_277 = [i for i in av_type_277  if "*290*" in i]
-    he_ok_277 = [i for i in av_type_277  if "*340*" in i]
-    he_tx_277 = [i for i in av_type_277  if "*400*" in i]
+    he_type_277  = [i for i in hews if '*0877077*' in i]
+    he_il_277 = [i for i in he_type_277  if "*621*" in i]
+    he_mt_277 = [i for i in he_type_277  if "*751*" in i]
+    he_nm_277 = [i for i in he_type_277  if "*290*" in i]
+    he_ok_277 = [i for i in he_type_277  if "*340*" in i]
+    he_tx_277 = [i for i in he_type_277  if "*400*" in i]
 
     #######################**Table Part**####################################################
     data = {'Vendor': ['Availity', 'Availity', 'Availity', 'Availity','RealMed','RealMed','RealMed','RealMed','Hews','Hews','Hews','Hews'],
@@ -126,6 +131,10 @@ def converter():
     print(df)
 
 if "__main__" == __name__:
-    directory = os.path.realpath(sys.argv[0])
-    converter()
     
+    start = time.time() * 1
+    directory = os.path.realpath(sys.argv[0])
+    
+    converter()
+    end = time.time() * 1
+    print(end - start)

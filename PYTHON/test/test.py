@@ -2,7 +2,7 @@ import os.path,sys
 import pandas as pd
 import numpy as np
 def converter():
-    fileName = os.path.join(workingDirectory,'../test.txt')
+    fileName = os.path.join(workingDirectory,'../logs.txt')
     # print('MONTHLY  LOCAL')
     # print('Vendor       TYPE      IL     MT     NM     OK     TX')
     with open(fileName,'r') as test_file: 
@@ -49,7 +49,7 @@ def converter():
     data = {'Vendor': ['Availity', 'Availity', 'Availity', 'Availity'],#, 'RealMed','RealMed','RealMed','RealMed','Hews','Hews','Hews','Hews'],
         'Type': [270,271,276,277],
         'IL':[len(il_270),len(il_271),len(il_276),len(il_277)],
-        'MT':[len(mt_271),len(mt_271),len(mt_276),len(mt_277)], 
+        'MT':[len(mt_270),len(mt_271),len(mt_276),len(mt_277)], 
         'NM':[len(nm_270),len(nm_271),len(nm_276),len(nm_277)],
         'OK':[len(ok_270),len(ok_271),len(ok_276),len(ok_277)],
         'TX':[len(tx_270),len(tx_271),len(tx_276),len(tx_277)]
@@ -96,7 +96,7 @@ def converter():
     data = {'Vendor': ['RealMed', 'RealMed', 'RealMed', 'RealMed'],#, 'RealMed','RealMed','RealMed','RealMed','Hews','Hews','Hews','Hews'],
         'Type': [270,271,276,277],
         'IL':[len(il_270),len(il_271),len(il_276),len(il_277)],
-        'MT':[len(mt_271),len(mt_271),len(mt_276),len(mt_277)], 
+        'MT':[len(mt_270),len(mt_271),len(mt_276),len(mt_277)], 
         'NM':[len(nm_270),len(nm_271),len(nm_276),len(nm_277)],
         'OK':[len(ok_270),len(ok_271),len(ok_276),len(ok_277)],
         'TX':[len(tx_270),len(tx_271),len(tx_276),len(tx_277)]
@@ -138,7 +138,7 @@ def converter():
     data = {'Vendor': ['Hews', 'Hews', 'Hews', 'Hews'],#, 'RealMed','RealMed','RealMed','RealMed','Hews','Hews','Hews','Hews'],
         'Type': [270,271,276,277],
         'IL':[len(il_270),len(il_271),len(il_276),len(il_277)],
-        'MT':[len(mt_271),len(mt_271),len(mt_276),len(mt_277)], 
+        'MT':[len(mt_270),len(mt_271),len(mt_276),len(mt_277)], 
         'NM':[len(nm_270),len(nm_271),len(nm_276),len(nm_277)],
         'OK':[len(ok_270),len(ok_271),len(ok_276),len(ok_277)],
         'TX':[len(tx_270),len(tx_271),len(tx_276),len(tx_277)]
