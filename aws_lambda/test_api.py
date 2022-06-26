@@ -90,6 +90,7 @@ def lambda_handler(event, context):
     # if "method" in event:
     result = getattr(NotifyAPIUtilities, event)(event)
     logger.info("Done!!!--->%s", result)
+    print(result)
     return result
     # else:
     #     msg = {"error": "invalid operation"}

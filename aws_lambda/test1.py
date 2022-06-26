@@ -1,8 +1,7 @@
 # Description: Lambda for rescheduling the EC2 events to weekend in case they are received over weekdays.
 # The function process the event, computes next weekend outage to reschedule the event.
 # After rescheduling event it sends SNS notification.
-# Created By:      Tech Mahindra
-# Creation Date:   8/18/2020
+
 
 import boto3
 import pandas as pd
