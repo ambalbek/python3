@@ -1,0 +1,3 @@
+localhost
+aziz.com
+10.10.10.10
