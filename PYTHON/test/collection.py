@@ -1,9 +1,11 @@
 import os.path,sys
 import pandas as pd
 
-def logs_from_file(logs):
-    fileName = os.path.join(directory,'../logs.txt')
-    test_file = open(fileName,'r')  
+inventory_dir = os.path.dirname(__file__)
+file_name = 'test.txt'
+real_path = os.path.join(inventory_dir,file_name)
+def logs_from_file(logs):    
+    test_file = open(real_path,'r') 
     for line in test_file.readlines():
         if '*030240928' in line:
             logs['Availity'].append(line)

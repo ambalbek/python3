@@ -1,17 +1,19 @@
 import os.path,sys
 import pandas as pd
 import numpy as np
+inventory_dir = os.path.dirname(__file__)
+file_name = 'logs.txt'
+real_path = os.path.join(inventory_dir,file_name)
 def converter():
-    fileName = os.path.join(workingDirectory,'../logs.txt')
     # print('MONTHLY  LOCAL')
     # print('Vendor       TYPE      IL     MT     NM     OK     TX')
-    with open(fileName,'r') as test_file: 
+    with open(real_path,'r') as test_file: 
         avility=[line for line in test_file if '*030240928' in line]
         test_file.close()
-    with open(fileName,'r') as test_file:     
+    with open(real_path,'r') as test_file:     
         realmed=[line for line in test_file if '*030240122' in line]
         test_file.close()
-    with open(fileName,'r') as test_file: 
+    with open(real_path,'r') as test_file: 
         hews=[line for line in test_file if '*030550127' in line]
         test_file.close()
         
