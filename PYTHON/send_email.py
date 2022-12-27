@@ -6,7 +6,7 @@ This is a simple mail. There is only text, no attachments are there The mail is 
 Thank You
 '''
 #The mail addresses and password
-sender_address = 'azal88@gmail.com'
+sender_address = os.environ.get('EMAIL', '')
 sender_pass = os.environ.get('PASSWORD', '')
 receiver_address = input('please ptovide email address: ')
 #Setup the MIME
