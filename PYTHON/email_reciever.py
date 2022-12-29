@@ -7,7 +7,7 @@ passwd = os.environ.get('PASSWORD', '')
 m.login(email, passwd)
 m.list()
 m.select('INBOX')
-print(m.select('inbox'))
+print(m.select('INBOX'))
 #typ, data = m.search(None,'FROM azal88*')
 #print(data)
-# not done yet have to work on it
+# not done yet have to work on it````
