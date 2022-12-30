@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from threading import current_thread
 import boto3
 from botocore.exceptions import ClientError

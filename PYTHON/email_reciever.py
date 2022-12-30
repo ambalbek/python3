@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import imaplib
 import getpass,os
 m = imaplib.IMAP4_SSL('imap.gmail.com')

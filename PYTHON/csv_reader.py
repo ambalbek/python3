@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import csv
 data = open('python3_output.csv')
 csv_data = csv.reader(data)

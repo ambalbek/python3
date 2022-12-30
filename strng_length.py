@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 def length(n):
     if len(n)<2:
         return n

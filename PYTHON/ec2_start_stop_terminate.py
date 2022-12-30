@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import boto3, sys
 def ec2():
     aws_mng_console=boto3.session.Session()

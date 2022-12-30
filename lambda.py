@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import boto3, time
 from random import choice
 from pprint import pprint

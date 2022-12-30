@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import datetime, boto3
 import logging
 logging.basicConfig(level=logging.INFO)

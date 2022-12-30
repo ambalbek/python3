@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import boto3
 from csv_module import csv_creator
 from time_differance_module import time_diff

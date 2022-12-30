@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import datetime
 from dateutil.parser import parse
 import csv

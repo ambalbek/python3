@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 ####### kak nayti '''abcde * a = eeeeee'''
 def abcde(n):
     num = 0

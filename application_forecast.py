@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 class Test:
     def __int__(self,name):
         self.my_lambda= lambda x: x**2

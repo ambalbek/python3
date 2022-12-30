@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 x,y=0,1
 while y < 100:
     x,y=y,y+x

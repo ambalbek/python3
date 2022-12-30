@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 d={} #1
 for _ in range(int(input())): #2
     Name=input() #3

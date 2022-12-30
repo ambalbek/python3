@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import smtplib, base64, os
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText

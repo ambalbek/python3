@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 class Emir():
     def __init__(self,sex,name,lastname):
         self.babies_sex=sex

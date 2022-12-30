@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import boto3
 from random import choice
 def get_iam_client():

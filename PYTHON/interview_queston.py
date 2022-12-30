@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """                                                                                
  A digital root is the single digit value obtained by iteratively summing          
  the digits of a number, where each iteration uses the result from the             

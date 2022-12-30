@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 #!/bin/bash 
 mylist= [('ibrash', 115000),('daniyar', 95000),('ulan', 110000),('kuba brat', 180000)]
 def maxcheck(mylist):

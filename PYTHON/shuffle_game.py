@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 def lesser_of_two_evens(a,b):
     if sum((a,b)) % 2 == 0:
         print(min(a,b))

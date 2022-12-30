@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from math import pi
 from functools import reduce
 import logging

@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # Description: Lambda for rescheduling the EC2 events to weekend in case they are received over weekdays.
 # The function process the event, computes next weekend outage to reschedule the event.
 # After rescheduling event it sends SNS notification.

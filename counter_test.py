@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 def str_numbers(num_str):
     s = (('one','odin','odna',1),('dva','two',2),('tri','three',3),('chetyre','four',4),('pyat','five',5),\
         ('six','shest',6),('sem','seven',7),('vosem','eight',8),('devyat','nine',9),('desyat','ten',10),\

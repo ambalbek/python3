@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 class Termo:
     def __init__(self):
         self.name='this will return temperature'

@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 #!/bin/bash
 import datetime
 from dateutil.parser import parse

@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import datetime
 time = datetime.datetime.now()
 def data(god):

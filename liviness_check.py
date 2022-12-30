@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import os
 inventory_dir = os.path.dirname(__file__)
 file_name = 'inventory.txt'

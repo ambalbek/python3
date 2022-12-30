@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from datetime import datetime, timedelta
 import boto3 , datetime, csv
 from operator import itemgetter
